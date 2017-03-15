@@ -42,7 +42,9 @@ public class Student {
     }
 }
 
-```定义一个需要转换的Vo类
+```
+
+定义一个需要转换的Vo类
 ```
 @Source(source = Student.class)
 public class StudentVo {
