@@ -11,7 +11,6 @@ public class CourseVo {
     private String courseName;
     private String courseId;
 
-
     public String getCourseName() {
         return courseName;
     }

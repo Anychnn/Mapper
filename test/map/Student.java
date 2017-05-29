@@ -6,9 +6,13 @@ import java.util.List;
  * Created by Administrator on 2017/3/15.
  */
 public class Student {
+    public enum StudentType{
+        A,B,C
+    }
     private String id;
     private String entityName;
     private List<Course> courseList;
+    private StudentType studentType;
 
     public String getId() {
         return id;
@@ -34,11 +38,12 @@ public class Student {
         this.courseList = courseList;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id='" + id + '\'' +
-                ", entityName='" + entityName + '\'' +
-                '}';
+    public StudentType getStudentType() {
+        return studentType;
     }
+
+    public void setStudentType(StudentType studentType) {
+        this.studentType = studentType;
+    }
+
 }
